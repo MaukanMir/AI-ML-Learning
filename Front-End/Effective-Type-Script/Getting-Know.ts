@@ -14,3 +14,10 @@ alert('Hello', 'TypeScript');  // alerts "Hello"
 // But in all of these cases, TypeScript considers it more likely that the odd usage is the result of an error than the developer’s intent, 
 // so it goes beyond simply modeling the runtime behavior. We saw another example of this in the capital/capitol example, where the program didn’t 
 // throw (it logged undefined) but the type checker still flagged an error.
+
+const names = ['Alice', 'Bob'];
+console.log(names[2].toUpperCase());
+
+// The root cause of these exceptions is that TypeScript’s understanding of a value’s type (its static type) and its actual type at runtime have diverged.
+//  A type system that can guarantee the accuracy of its static types is said to be sound. TypeScript’s 
+// type system is very much not sound, nor was it ever intended to be. Item 48 explores more ways that unsoundness can arise.
