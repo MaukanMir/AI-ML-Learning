@@ -14,4 +14,8 @@
 ? Project name: › chat_frontend
 ? Select a framework:  Svelte
 ? Select a variant: TypeScript */
+
+/* $ cd chat_frontend
+$ npm add axios@1.6.7 svelte-routing@2.11.0
+$ npm install */
 </style>
